@@ -1,0 +1,248 @@
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type=" " href="css/flex.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap" rel="stylesheet">
+    <title>Flex</title>
+  <style>
+      body{
+    margin:0;
+    width: 100vw;
+    font-family: 'Bodoni Moda', serif;
+}
+
+
+.shadow{
+    box-shadow: 2px 7px 6px -1px;
+}
+
+
+@media (max-width: 640px){
+    .container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0em;
+  }
+
+  .box-1, .box-2, .box-3{
+    margin: 4px 4px 2px 4px;
+    width:auto
+  }
+  footer{
+    margin: 0px auto;
+  }
+  .shadow{
+      
+    box-shadow: none;
+  }
+}
+
+
+
+footer {
+    height: 50%;
+    background-color: black;
+    width: 100vw;
+   
+    margin: 4px 4px 2px 4px;
+}
+.nav-bar{
+    display:flex;
+}
+.nav-buttons{
+   
+
+}
+.nav-controls{
+    display: flex;
+    position: relative;
+    left: 19%;
+}
+ 
+.logo{
+    display:flex;
+}
+
+
+nav{
+    position: relative;
+    background-color: black;
+    height: 5em;
+    top: 0em;
+    width:100vw;
+    z-index: 1;
+    position: sticky;
+    border-bottom: 2px solid #ff0000b0;
+}
+
+
+.call-to-action {
+    position: relative;
+    bottom: 29em;
+    left: 45%;
+    color: white;
+    background-color: brown;
+    height: 40px;
+    width: 147px;
+    box-shadow: -1px 4px 7px black;
+    font-size: large;
+
+}
+
+.call-to-action-nav {
+    position: relative;
+    color: white;
+    background-color: brown;
+    height: 40px;
+    width: 147px;
+    box-shadow: -1px 4px 7px black;
+    font-size: large;
+    top: 23%;
+    left: 30%;
+}
+
+/*testing nav-bar*/
+#header #nav-bar {
+    height: 10%; /*if you want just words make div height 0*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    color: blanchedalmond;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    border-bottom: 2px solid brown;
+    box-shadow: -1px 1px 10px black;
+
+}
+div a.nav-link {
+border-left: 4px solid gray;
+margin: 15px;
+display: flex;
+-ms-flex-align: center;
+padding-left: 20;
+font-size: 20px;
+}
+
+ div.hove:hover{
+background-color: brown;
+border-bottom: 2px solid    QAA black
+
+}
+
+a{
+text-decoration: none;
+color:blanchedalmond;
+}
+.hove {
+align-items: center;
+margin-left: 5em;
+display: flex;
+font-family: 'Bodoni Moda', serif;
+letter-spacing: 3px;
+}
+    
+#header-img{
+    position: relative;
+    top: 15%;
+
+}
+
+/*this secontion is really for bible study all the oither css is just to get a qiuck demo if nav bar but will place this in views*/
+.title {
+    font-size: 30px;
+    position: relative;
+    top: 7em;
+    left: 43%;
+    width: fit-content;
+}
+.studies {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: relative;
+    top: 18em;
+}
+    img {
+        width: 26em;
+        height: 15em;
+       
+    }
+  </style>
+</head>
+<body>
+    <header id="header">
+        
+        
+        <div id="nav-bar" class="links" >
+           <div id="header-img">
+               
+                 <p>MEET ME AT THE CROSS</p>
+            
+           </div>
+            <div class="hove"><a href="http://" target="_blank" rel="noopener noreferrer" class="nav-link">Bible Studies</a> </div>
+            <div class="hove"><a href="#feat"  rel="noopener noreferrer" class="nav-link">Prayer</a> </div>
+            <div class="hove"><a href="http://" target="_blank" rel="noopener noreferrer" class="nav-link">Videos</a> </div>
+            <div class="hove"><a href="http://" target="_blank" rel="noopener noreferrer" class="nav-link">Children Resorces</a> </div>
+            <div ><button class="call-to-action-nav" type="submit">Sign up!</button> </div>
+        </div>
+        
+        <p class="title">LATEST STUDIES</P>
+      <!--  <hr class="title">-->
+        
+        <div class="studies">
+            <div class="card" style="width: 18rem;">
+                <img src="https://images.unsplash.com/photo-1559463838-48bef70a54c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://images.unsplash.com/photo-1474901963208-accc1ba91782?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29taW5nJTIwc29vbiUyMHNpZ258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://images.unsplash.com/photo-1526351790682-1000ae194ec5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8Y29taW5nJTIwc29vbiUyMHNpZ258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://images.unsplash.com/photo-1487059509674-389a7b979022?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fGNvbWluZyUyMHNvb24lMjBzaWdufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://images.unsplash.com/photo-1559463838-48bef70a54c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://images.unsplash.com/photo-1559463838-48bef70a54c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+
+        </div>
+    </div>
+</body>
+</html>
