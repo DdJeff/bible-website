@@ -1,0 +1,47 @@
+.title {
+    font-size: 30px;
+    position: relative;
+    top: 7em;
+    width: fit-content;
+    display: flex;
+    background-color: brown;
+    padding: 2px 10px 2px 24px;
+}
+.studies {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: relative;
+    top: 16em;
+    grid-column-gap: 48px;
+}
+    img {
+        width: 18em;
+        height: 15em;
+        padding: 31px 0px 1px 0px;
+    }
+    .download-button{
+        background-color: brown;
+        border-radius: 5%;
+        height: -30px;
+        padding: 5px;
+        box-shadow: 2px 3px 3px 0px black;
+    }
+
+    section {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-adj{
+    position: relative;
+    top: 342px;
+}
+
+.more-studies {
+    position: relative;
+    top: 17em;
+    left: 50%;
+    width: fit-content;
+    color: brown;
+    font-size: larger;
+}

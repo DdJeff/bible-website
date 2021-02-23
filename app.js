@@ -11,8 +11,17 @@ app.set('views', path.join(__dirname, '/views'))
 //to server css/ images ...
 
 app.use(express.static('assets'))
+
 // root route
 app.get('/', (req, res) => {
+  res.render('home')
+})
+
+app.get('/studies', (req, res) => {
+  res.render('studies')
+})
+
+app.get('/*', (req, res) => {
   res.render('home')
 })
 
