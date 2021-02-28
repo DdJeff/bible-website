@@ -11,6 +11,10 @@ body{
     flex-direction: row;
     justify-content: center;
 }
+.invatation{
+    width: fit-content;
+    margin-left: 17px;
+}
 .box-1{
     background-color: aqua;
     height: 20em;
@@ -87,10 +91,7 @@ footer {
 .nav-bar{
     display:flex;
 }
-.nav-buttons{
-   
 
-}
 .nav-controls{
     display: flex;
     position: relative;
@@ -98,15 +99,14 @@ footer {
 }
  
 .logo{
-    display:flex;
-}
+    display:flex;}
 .cross img{
-    bottom: 100px;
+    bottom: -22px;
     width: 100vw;
     position: relative;
    /*Photo by Jordan McQueen on Unsplash => put on fig caption*/
 }
-h1 {
+#meeting {
     position: relative;
     bottom: 16.5em;
     color: blanchedalmond;
@@ -114,7 +114,7 @@ h1 {
     font-family: 'Bodoni Moda', serif;
     text-shadow: 3px 0px black;
     letter-spacing: 8px;
-    width: 50%;
+    width: fit-content;
 }       
 #bible-caption {
     position: relative;
@@ -142,10 +142,10 @@ nav{
     display: flex;
     background-color: #0000007a;
     color: white;
-    width: 31em;
+    width: 36%;
     position: relative;
-    left: 61%;
-    bottom: 42em;
+    left: 60%;
+    bottom: 79%;
     border-radius: 2%;
 }
 
@@ -168,7 +168,7 @@ nav{
     color: white;
     background-color: brown;
     height: 40px;
-    width: 147px;
+    width: fit-content;
     box-shadow: -1px 4px 7px black;
     font-size: large;
     top: 23%;
@@ -196,7 +196,7 @@ margin: 15px;
 display: flex;
 -ms-flex-align: center;
 padding-left: 20;
-font-size: 20px;
+font-size: 17px;
 }
 
  div.hove:hover{
@@ -209,9 +209,10 @@ a{
 text-decoration: none;
 color:blanchedalmond;
 }
+
 .hove {
 align-items: center;
-margin-left: 5em;
+
 display: flex;
 font-family: 'Bodoni Moda', serif;
 letter-spacing: 3px;
@@ -219,5 +220,131 @@ letter-spacing: 3px;
     
 #header-img{
     position: relative;
-    top: 15%;
+    top: 22%;
+}
+#menu{
+    display: none;
+}
+
+@media (max-width: 768px){
+    #header #nav-bar{
+
+        display: block;
+    }
+   
+    
+    #children{
+        width: 43%;
+    }
+    
+    .invatation{
+        width: fit-content;
+        margin-left: 17px;
+    }
+
+    .call-to-action-nav {
+        display: none;
+    }
+    #meeting {
+        bottom: 4.5em;
+        left: 4em;
+        letter-spacing: 6px;
+    }
+/*to animate => margin-top and display none*/
+    .hove {
+        top: -79px;
+        display: flex;
+        font-family: 'Bodoni Moda', serif;
+        letter-spacing: 3px;
+        background-color: #008000d1;
+        position: relative;
+        margin-top: 19px;
+        animation-name: drop-menu-in;
+        animation-duration: 1s;
+       
+    }
+    .bible-verse {
+        visibility: hidden;
+    }
+    
+    .call-to-action {
+        position: relative;
+        bottom: 19em;
+        left: 45%;
+        width: fit-content;  
+    }
+    #menu {
+        height: 86px;
+        background-color: brown;
+        position: relative;
+        left: 675px;
+        bottom: 79px;
+        display: block;
+    }
+
+    .line {
+        background: #0b0b0b;
+        height: 4px;
+        width: 57px;
+        z-index: 1;
+        margin-top: 12px;
+        position: relative;
+        left: 2%;
+        top: 29px;
+    }
+    .card-img {
+        height: 10em;
+      
+    }
+    
+   .cards{
+       font-size: 11px;
+       height: 23%;
+   }
+   .box-1, .box-2, .box-3{
+       height: 13em;
+   }
+}
+
+@keyframes drop-menu-in {
+    0%   {margin-top: -50;
+    opacity: 0%;}
+   
+    100% {margin-top:19;
+    opacity: 100%;}
+  }
+  
+
+
+.drop-down-display{
+    display:none;
+}
+
+.flex{
+    display: flex;
+}
+/*mobile phone size*/
+@media (max-width:425px){
+    #meeting{
+        display: none;
+    }
+
+    div a.nav-link {
+        font-size: 7px;
+    }
+    .cross img {
+        bottom: -4px
+    }
+
+   
+    #header-img {
+        top:15;
+    }
+    .call-to-action {
+        font-size: small;
+        height: 21;
+        margin-bottom: 17px;
+        bottom:18em;
+        left:44%
+    }
 }

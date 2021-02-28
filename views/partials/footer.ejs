@@ -3,5 +3,29 @@
 
 </footer>
 </div>
+<script> 
+const display = document.getElementById("display");
+const toggle = document.getElementsByClassName("drop-down-display")
+    const menu = document.getElementById("menu")
+    menu.addEventListener("click", () => {
+        //working on getting menu to disappre on click
+         
+       if(display.classList.value == "drop-down-display"){
+            display.classList.remove("drop-down-display")
+            display.classList.add("flex")
+            menu.style.background = "#008000";
+        }else{
+           
+            display.classList.add("drop-down-display")
+            display.classList.remove("flex")
+            menu.style.background = "brown";
+        }
+
+     
+         
+         
+    })
+   
+</script>
 </body>
 </html>
