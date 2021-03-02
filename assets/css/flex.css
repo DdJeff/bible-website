@@ -234,7 +234,7 @@ letter-spacing: 3px;
    
     
     #children{
-        width: 43%;
+        width: 48%;
     }
     
     .invatation{
@@ -261,6 +261,7 @@ letter-spacing: 3px;
         margin-top: 19px;
         animation-name: drop-menu-in;
         animation-duration: 1s;
+        width:fit-content;
        
     }
     .bible-verse {
@@ -278,7 +279,7 @@ letter-spacing: 3px;
         background-color: brown;
         position: relative;
         left: 675px;
-        bottom: 79px;
+        bottom: 74px;
         display: block;
     }
 
@@ -323,6 +324,42 @@ letter-spacing: 3px;
 .flex{
     display: flex;
 }
+/*lop-top 1024*/
+@media (max-width:1024px){
+
+    #meeting {
+        bottom: 11.5em;
+        letter-spacing: 4px;
+    }
+    #bible-caption {
+        font-size: 16px;
+    }
+    .bible-verse{
+        bottom: 64%;
+    }
+    .call-to-action {
+        bottom:24em;
+        left:44%;
+    }
+    div a.nav-link {
+        font-size: 14px;
+    }
+    .card-img{
+        height: 12em;
+    }
+    .box-1, .box-2, .box-3{
+        height: 15em;
+    }
+    .cards {
+        font-size: 22px;
+    }
+    .invatation {
+        margin-left: 0%;
+    }
+    #header-img{
+        top:16%;
+    }
+}
 /*mobile phone size*/
 @media (max-width:425px){
     #meeting{
@@ -333,10 +370,12 @@ letter-spacing: 3px;
         font-size: 7px;
     }
     .cross img {
-        bottom: -4px
+        bottom: -58px
     }
 
-   
+   .container{
+        margin-top: -170px;
+   }
     #header-img {
         top:15;
     }
@@ -344,7 +383,7 @@ letter-spacing: 3px;
         font-size: small;
         height: 21;
         margin-bottom: 17px;
-        bottom:18em;
+        bottom:14em;
         left:44%
     }
 }

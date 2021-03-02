@@ -1,0 +1,20 @@
+to cap all words
+
+function titleCase(str) {
+  str = str.toLowerCase();
+  const test = str.split(" ")
+  const cap = test.map((el,index) =>{
+//uppercase el
+   const upper = el[0].toUpperCase(); 
+
+   const finished = upper + el.slice(1, el.length)
+  
+   
+
+   return finished
+  })
+  
+  return cap.join(" ")
+}
+
+titleCase("HERE IS MY HANDLE HERE IS MY SPOUT");

@@ -1,3 +1,4 @@
+
 .title {
     font-size: 30px;
     position: relative;
@@ -6,6 +7,7 @@
     display: flex;
     background-color: brown;
     padding: 2px 10px 2px 24px;
+    
 }
 .studies {
     display: grid;
@@ -40,8 +42,44 @@
 .more-studies {
     position: relative;
     top: 17em;
-    left: 50%;
+    margin-left: 18%;
     width: fit-content;
     color: brown;
     font-size: larger;
+
+}
+#content{
+    margin-left: 44%;
+}
+
+@media (max-width: 768px){
+
+    .studies {
+        
+        grid-template-columns: auto  auto;
+       
+    }
+#header #nav-bar {
+    height: 9.7%;
+}
+div a.nav-link {
+    padding-left: 6px;
+}
+#menu{
+    width:15%;
+    padding-left: 10px;
+}
+.hove{
+    letter-spacing: 5px;
+}
+}
+
+@media (max-width: 425px){
+
+    .studies {
+        
+        grid-template-columns: auto ;
+       
+    }
+
 }
