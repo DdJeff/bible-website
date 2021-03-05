@@ -24,6 +24,9 @@ app.get('/studies', (req, res) => {
 app.get('/videos', (req, res) => {
   res.render('videos')
 })
+app.get('/prayer', (req, res) => {
+  res.render('prayer')
+})
 
 //download the bible studies
 app.get('/download', function(req, res){
