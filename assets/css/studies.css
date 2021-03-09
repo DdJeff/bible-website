@@ -60,14 +60,14 @@
        
     }
 #header #nav-bar {
-    height: 9.7%;
+    height: 10.3%;
 }
 div a.nav-link {
     padding-left: 6px;
 }
 #menu{
-    width:15%;
-    padding-left: 10px;
+    width: 11%;
+    padding-left: 21px;
 }
 .hove{
     letter-spacing: 5px;
@@ -81,5 +81,16 @@ div a.nav-link {
         grid-template-columns: auto ;
        
     }
+    #menu {
+        width: 18%;
+        padding-left: 10px;
+    }
 
+}
+
+@media (max-width: 375px){
+#menu {
+    
+    padding-left: 7px;
+}
 }

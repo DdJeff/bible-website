@@ -177,7 +177,7 @@ nav{
 
 /*testing nav-bar*/
 #header #nav-bar {
-    height: 10%; /*if you want just words make div height 0*/
+    height: 10.5%; /*if you want just words make div height 0*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -227,6 +227,7 @@ letter-spacing: 3px;
 }
 
 @media (max-width: 768px){
+    
     #header #nav-bar{
 
         display: block;
@@ -239,7 +240,7 @@ letter-spacing: 3px;
     
     .invatation{
         width: fit-content;
-        margin-left: 17px;
+        margin-left: 3%;
     }
 
     .call-to-action-nav {
@@ -278,8 +279,8 @@ letter-spacing: 3px;
         height: 86px;
         background-color: brown;
         position: relative;
-        left: 675px;
-        bottom: 74px;
+        left: 87%;
+        bottom: 75px;
         display: block;
     }
 
@@ -353,15 +354,17 @@ letter-spacing: 3px;
     .cards {
         font-size: 22px;
     }
-    .invatation {
-        margin-left: 0%;
-    }
+   
     #header-img{
         top:16%;
     }
 }
 /*mobile phone size*/
 @media (max-width:425px){
+    #menu{
+        left: 81%;
+        bottom: 77px;
+    }
     #meeting{
         display: none;
     }
